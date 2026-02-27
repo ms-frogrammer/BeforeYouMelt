@@ -51,18 +51,17 @@ function tile_generate_col_map(_room_w, _room_h, _tile_size, _tilemap_name) {
 		}
 	}
 	
-	layer_set_visible(_tilemap_id, false);
 	
-	for(var _x = 0; _x <= _w; _x += 1) {
-		for(var _y = 0; _y <= _h; _y += 1) {
+	for(var _x = 0; _x < _w; _x++) {
+		for(var _y = 0; _y < _h; _y++) {
 			if _map[# _x, _y] {
 				var _tile = instance_create_layer(_x * TILE + 8, _y * TILE + 16, _layer, ob_col);
 			}
 		}
 	}
-
-	layer_set_visible(_tilemap_id, true);
+	
 	layer_set_visible(_layer, false);
+
 
 	return _map;
 }

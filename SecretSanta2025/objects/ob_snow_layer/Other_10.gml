@@ -1,6 +1,9 @@
 
-if !layer_exists("Tiles_2") exit;
-
+if !layer_exists("Tiles_2") 
+{
+    instance_destroy();
+    exit;
+}
 var _snow_layer = layer_get_id("Tiles_2");
 layer_set_visible(_snow_layer, false);
 

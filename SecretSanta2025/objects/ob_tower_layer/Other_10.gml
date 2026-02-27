@@ -1,4 +1,8 @@
-if !layer_exists("Tower") instance_destroy();
+if !layer_exists("Tower") 
+{
+    instance_destroy();
+    exit;
+}
 
 var _tower_layer = layer_get_id("Tower");
 
