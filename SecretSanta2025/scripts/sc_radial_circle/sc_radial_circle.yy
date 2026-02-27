@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_radial_circle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_radial_circle",
+  "parent":{
+    "name":"visual",
+    "path":"folders/Scripts/visual.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_sound",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_sound",
+  "parent":{
+    "name":"engine",
+    "path":"folders/Scripts/engine.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

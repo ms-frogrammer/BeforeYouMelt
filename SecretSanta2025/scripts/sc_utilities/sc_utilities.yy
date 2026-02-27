@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_utilities",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_utilities",
+  "parent":{
+    "name":"engine",
+    "path":"folders/Scripts/engine.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+event_subscribe(EV_TEXTBOX_END, end_talk);

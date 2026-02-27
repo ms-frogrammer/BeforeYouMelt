@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"music_bym_dialogue",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":3,
+  "conversionMode":0,
+  "duration":67.996735,
+  "name":"music_bym_dialogue",
+  "parent":{
+    "name":"music",
+    "path":"folders/Sounds/music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"music_bym_dialogue.mp3",
+  "type":1,
+  "volume":0.8,
+}

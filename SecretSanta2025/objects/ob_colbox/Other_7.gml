@@ -1,0 +1,1 @@
+if destroy_on_anim instance_destroy();

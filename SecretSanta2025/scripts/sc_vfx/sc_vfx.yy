@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_vfx",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_vfx",
+  "parent":{
+    "name":"visual",
+    "path":"folders/Scripts/visual.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

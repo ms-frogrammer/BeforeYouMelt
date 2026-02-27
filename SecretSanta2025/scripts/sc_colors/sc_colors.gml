@@ -1,0 +1,13 @@
+#macro CYAN #46dccd
+#macro DARK #442434
+#macro WHITE #F9F5D2
+#macro WHITE_WARM #f9f5d2
+#macro ORANGE #f7872a
+#macro GREEN #5cac48
+#macro RED #ce3b26
+#macro YELLOW #fcd56b
+#macro GREY #a7acba
+#macro ROCK #6E5657
+#macro TOWER #A07385
+#macro PINK #F3CFB5
+#macro PINK_DARK #E18D9D

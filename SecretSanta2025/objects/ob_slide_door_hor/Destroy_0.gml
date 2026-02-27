@@ -1,0 +1,1 @@
+if snd != -1 audio_stop_sound(snd);

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_animation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_animation",
+  "parent":{
+    "name":"visual",
+    "path":"folders/Scripts/visual.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+textbox_create(BARRELBOT_GOGGLES_1)

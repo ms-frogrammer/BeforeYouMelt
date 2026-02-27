@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_textbox_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_textbox_functions",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/engine/dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

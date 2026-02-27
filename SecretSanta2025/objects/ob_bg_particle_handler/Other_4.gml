@@ -1,0 +1,1 @@
+init_particles(particle_number);
