@@ -7,6 +7,7 @@
 #macro BIRD_1           "bird_1"
 
 #macro HUT_1            "hut_1"
+#macro HUT_2            "hut_2"
 
 function get_dialogue_text_with_id(_text_id)
 {
@@ -181,6 +182,28 @@ function get_dialogue_text_with_id(_text_id)
                 _voice(sfx_voice_3);
             _add("...it's truly a sight to see.");
                 _voice(sfx_voice_3);
+
+         case HUT_2:
+            _speaker("Bird");
+
+            
+            _add("GOOD DAY!");
+                _shake(0, 50);
+                _voice(sfx_voice_3);
+            _add("Before You Melt is out now!");
+                _voice(sfx_voice_3);
+            _add("Download it on itch.io for free!!!")
+                _voice(sfx_voice_3);
+            _add("It takes like ~35 minutes to beat...");
+                _voice(sfx_voice_3);
+            _add("... and it has a speedrun mode too!");
+                _voice(sfx_voice_3);
+            _add("Please spread the word!");
+                _float(0, 50);
+                _voice(sfx_voice_3);
+            _add("thank you <3");
+                _voice(sfx_voice_3);
+
             
     #endregion
     }
