@@ -9,12 +9,12 @@ camera_set_view_size(VIEW, game_width, game_height);
 if (!surface_exists(view_surf)) {
 	view_surf = surface_create(game_width, game_height);
 }
-view_surface_id[0] = view_surf;
+//view_surface_id[0] = view_surf;
 
 for(var i = 0; i < array_length(outline_surfaces); i++)
 {
 	if (!surface_exists(outline_surfaces[i])) {
-		outline_surfaces[i] = surface_create(game_width + 1, game_height + 1);
+		outline_surfaces[i] = surface_create(game_width+1, game_height+1);
 	}
 }
 

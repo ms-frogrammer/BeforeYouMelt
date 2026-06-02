@@ -24,6 +24,8 @@ init_particles = function(_num)
 	{
 		var _p = new_particle(BG_PARTICLES.SNOW, random_range(0, room_width), random_range(0, room_height), -2, 0, wind_dir + random_range(-dir_var/2, dir_var), wind_spd);
 		save_particle(_p);
+		
+		log("add particle");
 	}
 }
 
@@ -70,20 +72,24 @@ delete_particle = function(_particle)
 }
 draw_particle = function(_particle)
 {
+
 	switch(_particle.type)
 	{
 		case BG_PARTICLES.SNOW:
 			var _col = color;
 			var _cx = camera_get_view_x(VIEW);
 			var _cy = camera_get_view_y(VIEW);
-			var _px = _particle.x;
-			var _py = _particle.y;
+			var _px = _particle.x - _cx;
+			var _py = _particle.y - _cy;
+			
 			draw_rectangle_color(_px - _cx, _py - _cy, _px - _cx + 1, _py - _cy + 1, _col, _col, _col, _col, false);
+			//draw_sprite_ext(sp_pixel, 0, floor(_px), floor(_py), 1, 1, 0, _col, 1);
 			if wind_spd > 2
 			{
 				_px -= _particle.hsp/2;
 				_py -= _particle.vsp/2;
 				draw_rectangle_color(_px - _cx, _py - _cy, _px - _cx + 1, _py - _cy + 1, _col, _col, _col, _col, false);
+				//draw_sprite_ext(sp_pixel, 0, floor(_px), floor(_py), 1, 1, 0, _col, 1);
 			}
 			
 			break;
@@ -109,4 +115,6 @@ move_particle = function(_id)
 		}
 	}
 }
+
+init_particles(particle_number);
 

@@ -1,5 +1,7 @@
-#macro GAME_SAVE working_directory + "game.save"
-#macro BEST_TIME working_directory + "best_time.save"
+#macro GAME_SAVE working_directory + "before_you_melt.json"
+#macro BEST_TIME working_directory + "best_time.json"
+
+
 
 // Save function
 function save_json(_data, _name) {

@@ -20,7 +20,7 @@ function __input_config_verbs()
             left:       [input_binding_key(vk_left),  input_binding_key("A")],
             right:      [input_binding_key(vk_right), input_binding_key("D")],
 			
-			jump:       [input_binding_key("Z"), input_binding_key(vk_space)],
+			jump:       [input_binding_key("Z"), input_binding_key(vk_space), input_binding_key(vk_up),    input_binding_key("W")],
             release:    [input_binding_key("C"), input_binding_key("K")],
 			grab:       [input_binding_key("X"), input_binding_key("J")],
             shift:      [input_binding_key(vk_shift)],

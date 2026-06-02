@@ -1,3 +1,5 @@
+global.room_order = ds_list_create();
+
 function RoomData(_is_night, _is_windy, _has_bird, _is_sunrise, _bg_track = undefined) constructor {
 	is_night = _is_night;
 	is_windy = _is_windy;
@@ -9,6 +11,7 @@ function RoomData(_is_night, _is_windy, _has_bird, _is_sunrise, _bg_track = unde
 function rm_data(_rm, _is_night, _is_windy, _has_bird, _is_sunrise, _bg_track = undefined) {
 	
 	global.room_data[? room_get_name(_rm)] = new RoomData(_is_night, _is_windy, _has_bird, _is_sunrise, _bg_track);
+	ds_list_add(global.room_order, _rm);
 
 }
 global.room_data = ds_map_create();

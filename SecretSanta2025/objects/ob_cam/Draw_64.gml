@@ -29,14 +29,15 @@ for(var i = 0; i < array_length(outline_groups); i++)
 			
 			var _color = outline_colors[i];
 			outline_draw_surface_ext(_target_surf, 0, 0, 1, 1, 0, c_white, 1, ol_config(1, _color, 1, true, 0));
-
+			//draw_surface(_target_surf, 0, 0);
 		surface_reset_target();
 	}
 	else continue;
 }
 
 #region TRANSITION
-
+	
+	
 	// - TRANSITION VARIABLES
 		var _t = AnimcurveTween(0, 1, acLinear, (1-global.transition_fade))	
 
@@ -49,6 +50,7 @@ for(var i = 0; i < array_length(outline_groups); i++)
 	// - TRANSITION SURFACES
 		if global.transition_fade > 0
 		{
+			log(global.transition_fade);
 			// - BG
 				if surface_exists(transition_bg_surf) 
 				{
@@ -78,6 +80,8 @@ for(var i = 0; i < array_length(outline_groups); i++)
 				}
 			// -
 		}
+		
+		
 	// -
 #endregion
 
@@ -100,7 +104,10 @@ surface_set_target(view_surf);
 surface_reset_target();
 
 
+
 if (surface_exists(view_surf)) {
+	
+
 	
 	// Transition effect
 	if global.transition_fade > 0
@@ -118,14 +125,28 @@ if (surface_exists(view_surf)) {
 		}
 	}	
 	else draw_surface(view_surf, 0, 0);
-}
+	
 
+}
 
 surface_set_target(view_surf);
 draw_clear_alpha(c_black, 0);
 surface_reset_target();
 
-// for(var i = 0; i < array_length(_outline_surfs); i++)
-// {
-// 	surface_free(_outline_surfs[i]);
-// }
+
+ for(var i = 0; i < array_length(outline_surfaces); i++)
+ {
+ 	surface_free(outline_surfaces[i]);
+ }
+ 
+ 
+//if surface_exists(transition_bg_surf)
+//{
+//	surface_free(transition_bg_surf);
+//}
+
+//if surface_exists(transition_mask_surf)
+//{
+//	surface_free(transition_mask_surf);
+//}
+

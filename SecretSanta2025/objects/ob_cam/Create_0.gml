@@ -6,11 +6,6 @@ depth = -999;
 game_width = RES_W;
 game_height = RES_H;
 
-// prevent default scaling behaviour:
-surface_resize(application_surface, RES_W, RES_H);
-display_set_gui_size(RES_W, RES_H);
-window_set_size(RES_W * WINDOW_SCALE, RES_H * WINDOW_SCALE);
-window_center();
 
 // shake
 shake = new Shake();

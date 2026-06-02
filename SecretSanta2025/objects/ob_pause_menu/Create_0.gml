@@ -32,7 +32,7 @@
 
 	fullscreen_x = RES_W/2;
 	fullscreen_y = _y;
-	_y += _dif;
+	//_y += _dif;
 
 	mute_x = RES_W/2;
 	mute_y = _y;
@@ -72,7 +72,7 @@
 
 	menu_func = function()
 	{
-		if global.bg_track != -1
+		if !is_undefined(global.bg_track)
 		{
 			audio_sound_gain(global.bg_track, 0, 2000);
 		}
@@ -85,7 +85,7 @@
 		game_end();
 	}
 
-	btn_funcs = [continue_func, fullscreen_func, mute_func, menu_func, exit_func];
+	btn_funcs = [continue_func, mute_func, menu_func];
 // -
 
 // -

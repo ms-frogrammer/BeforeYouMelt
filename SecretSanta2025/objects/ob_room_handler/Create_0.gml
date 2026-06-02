@@ -9,7 +9,7 @@ to_room = noone;
 exit_id = -1;
 
 is_fading_in = false;
-fade_spd = 1/40; 
+fade_spd = 1/40; //1/40
 
 restart_held = 0;
 

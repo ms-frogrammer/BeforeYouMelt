@@ -1,3 +1,4 @@
+
 var _cx = camera_get_view_x(VIEW);
 var _cy = camera_get_view_y(VIEW);
 

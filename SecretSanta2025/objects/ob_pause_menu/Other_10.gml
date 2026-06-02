@@ -26,7 +26,6 @@ if global.game_paused
 
 if is_message
 {
-    log(is_message)
     #region MESSAGE
         var _color = #e18d9d;
         var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + message_txt);
@@ -56,28 +55,28 @@ else
             _scrib.draw(continue_x, continue_y);
 
         // Fullscreen
-            var _color = (selected == 1) ? YELLOW : WHITE_WARM;
-            var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + (window_get_fullscreen() ? "windowed" : "fullscreen"));
-            _scrib.blend(_color, 1);
-            _scrib.draw(fullscreen_x, fullscreen_y);
+            // var _color = (selected == 1) ? YELLOW : WHITE_WARM;
+            // var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + (window_get_fullscreen() ? "windowed" : "fullscreen"));
+            // _scrib.blend(_color, 1);
+            // _scrib.draw(fullscreen_x, fullscreen_y);
 
         // Mute
-            var _color = (selected == 2) ? YELLOW : WHITE_WARM;
+            var _color = (selected == 1) ? YELLOW : WHITE_WARM;
             var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + (global.mute ? "unmute" : "mute"));
             _scrib.blend(_color, 1);
             _scrib.draw(mute_x, mute_y);
 
         // Menu
-            var _color = (selected == 3) ? YELLOW : WHITE_WARM;
+            var _color = (selected == 2) ? YELLOW : WHITE_WARM;
             var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + "menu");
             _scrib.blend(_color, 1);
             _scrib.draw(menu_x, menu_y);
 
         // Exit
-            var _color = (selected == 4) ? YELLOW : WHITE_WARM;
-            var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + "exit");
-            _scrib.blend(_color, 1);
-            _scrib.draw(exit_x, exit_y);
+            // var _color = (selected == 4) ? YELLOW : WHITE_WARM;
+            // var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + "exit");
+            // _scrib.blend(_color, 1);
+            // _scrib.draw(exit_x, exit_y);
 
     #endregion
 

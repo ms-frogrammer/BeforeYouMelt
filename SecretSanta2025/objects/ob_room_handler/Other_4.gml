@@ -1,7 +1,6 @@
 
-if room != rm_init
+if room != rm_init && room != rm_coolmath
 {
-
 	// Load room data
 		var _rm_name = room_get_name(room);
 		if !is_undefined(ds_map_find_value(global.room_data, _rm_name))
@@ -66,6 +65,10 @@ if room != rm_init
 				audio_stop_sound(music_bym_dialogue);
 			}
 
+			// Let coolmath know which level number has started
+			var _lvl_num = ds_list_find_index(global.room_order, room);
+			coolmathCallLevelStart(_lvl_num);
+
 			// - SAVE GAME
 				global.at_room = room;
 
@@ -78,7 +81,11 @@ if room != rm_init
 	for(var i=0; i < array_length(create_each_room); i++)
 	{
 		if !instance_exists(create_each_room[i])
+		{
 			instance_create_depth(0, 0, 0, create_each_room[i]);
+		}
+		
+		
 	}
 
 	if layer_exists("Tiles_1")

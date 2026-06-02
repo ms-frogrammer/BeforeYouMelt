@@ -11,6 +11,9 @@ if is_transitioning
 		if is_reloading {
 			// - RESTART THE ROOM
 				room_restart();
+				
+				var _lvl_num = ds_list_find_index(global.room_order, room);
+				coolmathCallLevelRestart(_lvl_num);
 
 				ob_plr.load_start_pos();
 				ob_plr.restart();	

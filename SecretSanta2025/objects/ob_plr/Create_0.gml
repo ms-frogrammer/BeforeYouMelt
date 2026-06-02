@@ -499,17 +499,17 @@ is_alive = true;
 								shift_to = _dir;
 							}
 						}
-						else if !raycast(x, y, 270, 8, ob_col, ob_block_par) && on_ground
-						{	
-							if x - predicting_block.x >= 6
-							{
-								shift_to = 1;
-							}
-							else if x - predicting_block.x <= -6
-							{
-								shift_to = -1;
-							}
-						}
+						// else if !raycast(floor(x), floor(y), 270, 8, ob_col, ob_block_par) && on_ground
+						// {	
+						// 	if floor(x - predicting_block.x) >= 6
+						// 	{
+						// 		shift_to = 1;
+						// 	}
+						// 	else if floor(x - predicting_block.x) <= -6
+						// 	{
+						// 		shift_to = -1;
+						// 	}
+						// }
 					}
 					exit;
 				}

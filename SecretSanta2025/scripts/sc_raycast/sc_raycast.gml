@@ -14,7 +14,7 @@ function raycast(_x, _y, _angle, _length){
 		
 		for(var i = 0; i < ds_list_size(_collider_list); i++){
 			var collider = ds_list_find_value(_collider_list, i);
-			var _instance = collision_point(lx, ly, collider, true, true);
+			var _instance = collision_point(floor(lx), floor(ly), collider, true, true);
 			array_push(_coords, {x : lx, y : ly});
 			
 			 if(_instance)  {

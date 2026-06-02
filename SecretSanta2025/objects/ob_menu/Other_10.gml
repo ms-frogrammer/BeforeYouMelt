@@ -60,22 +60,22 @@ else
             _scrib.draw(play_x, play_y);
 
         // Fullscreen
-            var _color = (selected == 2) ? YELLOW : WHITE_WARM;
-            var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + (window_get_fullscreen() ? "windowed" : "fullscreen"));
-            _scrib.blend(_color, 1);
-            _scrib.draw(fullscreen_x, fullscreen_y);
+            // var _color = (selected == 2) ? YELLOW : WHITE_WARM;
+            // var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + (window_get_fullscreen() ? "windowed" : "fullscreen"));
+            // _scrib.blend(_color, 1);
+            // _scrib.draw(fullscreen_x, fullscreen_y);
 
         // Mute
-            var _color = (selected == 3) ? YELLOW : WHITE_WARM;
+            var _color = (selected == 2) ? YELLOW : WHITE_WARM;
             var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + (global.mute ? "unmute" : "mute"));
             _scrib.blend(_color, 1);
             _scrib.draw(mute_x, mute_y);
 
         // Exit
-            var _color = (selected == 4) ? YELLOW : WHITE_WARM;
-            var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + "exit");
-            _scrib.blend(_color, 1);
-            _scrib.draw(exit_x, exit_y);
+            // var _color = (selected == 3) ? YELLOW : WHITE_WARM;
+            // var _scrib = scribble("[fnt_main]" + "[wave][fa_center][fa_middle]" + "exit");
+            // _scrib.blend(_color, 1);
+            // _scrib.draw(exit_x, exit_y);
 
     #endregion
 

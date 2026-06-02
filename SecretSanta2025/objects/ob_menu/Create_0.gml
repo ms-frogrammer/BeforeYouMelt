@@ -38,7 +38,7 @@ speedrun_data = load_speedrun();
 
 	fullscreen_x = room_width/2;
 	fullscreen_y = _y;
-	_y += _dif;
+	//_y += _dif;
 
 	mute_x = room_width/2;
 	mute_y = _y;
@@ -52,6 +52,9 @@ speedrun_data = load_speedrun();
 // - BUTTON FUNCTIONS
 	play_func = function()
 	{
+		coolmathCallStart();
+
+		
 		if has_data
 		{
 			selected = 0;
@@ -110,7 +113,7 @@ speedrun_data = load_speedrun();
 		game_end();
 	}
 
-	btn_funcs = [continue_func, play_func, fullscreen_func, mute_func, exit_func];
+	btn_funcs = [continue_func, play_func, mute_func];
 // -
 
 // -
